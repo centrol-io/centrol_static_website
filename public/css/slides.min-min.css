@@ -18,8 +18,8 @@ img {
 
 .button,
 .container .wrap,
-.slides-form.center input,
-.slides-form.center textarea {
+.early-access-sign-up-form.center input,
+.early-access-sign-up-form.center textarea {
     text-align: center
 }
 
@@ -845,8 +845,8 @@ img.rounded {
 }
 
 .dialog li input,
-.slides-form,
-.slides-form button {
+.early-access-sign-up-form,
+.early-access-sign-up-form button {
     font-family: inherit
 }
 
@@ -972,27 +972,27 @@ img.rounded {
     padding: 4px 0
 }
 
-.slides-form .label,
-.slides-form label {
+.early-access-sign-up-form .label,
+.early-access-sign-up-form label {
     display: block;
     font-size: 14px;
     margin-top: 12px;
     margin-bottom: 2px
 }
 
-.slides-form .label.uppercase,
-.slides-form label.uppercase {
+.early-access-sign-up-form .label.uppercase,
+.early-access-sign-up-form label.uppercase {
     font-size: 14px
 }
 
-.slides-form input[type=email],
-.slides-form input[type=name],
-.slides-form input[type=number],
-.slides-form input[type=password],
-.slides-form input[type=tel],
-.slides-form input[type=text],
-.slides-form select,
-.slides-form textarea {
+.early-access-sign-up-form input[type=email],
+.early-access-sign-up-form input[type=name],
+.early-access-sign-up-form input[type=number],
+.early-access-sign-up-form input[type=password],
+.early-access-sign-up-form input[type=tel],
+.early-access-sign-up-form input[type=text],
+.early-access-sign-up-form select,
+.early-access-sign-up-form textarea {
     font-family: inherit;
     position: relative;
     background: #fff;
@@ -1010,129 +1010,129 @@ img.rounded {
     transition: .15s
 }
 
-.slides-form input[type=email].flat,
-.slides-form input[type=email]:focus,
-.slides-form input[type=email]:hover,
-.slides-form input[type=name].flat,
-.slides-form input[type=name]:focus,
-.slides-form input[type=name]:hover,
-.slides-form input[type=number].flat,
-.slides-form input[type=number]:focus,
-.slides-form input[type=number]:hover,
-.slides-form input[type=password].flat,
-.slides-form input[type=password]:focus,
-.slides-form input[type=password]:hover,
-.slides-form input[type=tel].flat,
-.slides-form input[type=tel]:focus,
-.slides-form input[type=tel]:hover,
-.slides-form input[type=text].flat,
-.slides-form input[type=text]:focus,
-.slides-form input[type=text]:hover,
-.slides-form select.flat,
-.slides-form select:focus,
-.slides-form select:hover,
-.slides-form textarea.flat,
-.slides-form textarea:focus,
-.slides-form textarea:hover {
+.early-access-sign-up-form input[type=email].flat,
+.early-access-sign-up-form input[type=email]:focus,
+.early-access-sign-up-form input[type=email]:hover,
+.early-access-sign-up-form input[type=name].flat,
+.early-access-sign-up-form input[type=name]:focus,
+.early-access-sign-up-form input[type=name]:hover,
+.early-access-sign-up-form input[type=number].flat,
+.early-access-sign-up-form input[type=number]:focus,
+.early-access-sign-up-form input[type=number]:hover,
+.early-access-sign-up-form input[type=password].flat,
+.early-access-sign-up-form input[type=password]:focus,
+.early-access-sign-up-form input[type=password]:hover,
+.early-access-sign-up-form input[type=tel].flat,
+.early-access-sign-up-form input[type=tel]:focus,
+.early-access-sign-up-form input[type=tel]:hover,
+.early-access-sign-up-form input[type=text].flat,
+.early-access-sign-up-form input[type=text]:focus,
+.early-access-sign-up-form input[type=text]:hover,
+.early-access-sign-up-form select.flat,
+.early-access-sign-up-form select:focus,
+.early-access-sign-up-form select:hover,
+.early-access-sign-up-form textarea.flat,
+.early-access-sign-up-form textarea:focus,
+.early-access-sign-up-form textarea:hover {
     border-color: rgba(0, 0, 0, .2)
 }
 
-.slides-form input[type=email]:focus,
-.slides-form input[type=name]:focus,
-.slides-form input[type=number]:focus,
-.slides-form input[type=password]:focus,
-.slides-form input[type=tel]:focus,
-.slides-form input[type=text]:focus,
-.slides-form select:focus,
-.slides-form textarea:focus {
+.early-access-sign-up-form input[type=email]:focus,
+.early-access-sign-up-form input[type=name]:focus,
+.early-access-sign-up-form input[type=number]:focus,
+.early-access-sign-up-form input[type=password]:focus,
+.early-access-sign-up-form input[type=tel]:focus,
+.early-access-sign-up-form input[type=text]:focus,
+.early-access-sign-up-form select:focus,
+.early-access-sign-up-form textarea:focus {
     border-color: #0050c7;
     z-index: 10
 }
 
-.slides-form input[type=email]:focus::-webkit-input-placeholder,
-.slides-form input[type=name]:focus::-webkit-input-placeholder,
-.slides-form input[type=number]:focus::-webkit-input-placeholder,
-.slides-form input[type=password]:focus::-webkit-input-placeholder,
-.slides-form input[type=tel]:focus::-webkit-input-placeholder,
-.slides-form input[type=text]:focus::-webkit-input-placeholder,
-.slides-form select:focus::-webkit-input-placeholder,
-.slides-form textarea:focus::-webkit-input-placeholder {
+.early-access-sign-up-form input[type=email]:focus::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=name]:focus::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=number]:focus::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=password]:focus::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=tel]:focus::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=text]:focus::-webkit-input-placeholder,
+.early-access-sign-up-form select:focus::-webkit-input-placeholder,
+.early-access-sign-up-form textarea:focus::-webkit-input-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: 0
 }
 
-.slides-form input[type=email]:focus:-moz-placeholder,
-.slides-form input[type=name]:focus:-moz-placeholder,
-.slides-form input[type=number]:focus:-moz-placeholder,
-.slides-form input[type=password]:focus:-moz-placeholder,
-.slides-form input[type=tel]:focus:-moz-placeholder,
-.slides-form input[type=text]:focus:-moz-placeholder,
-.slides-form select:focus:-moz-placeholder,
-.slides-form textarea:focus:-moz-placeholder {
+.early-access-sign-up-form input[type=email]:focus:-moz-placeholder,
+.early-access-sign-up-form input[type=name]:focus:-moz-placeholder,
+.early-access-sign-up-form input[type=number]:focus:-moz-placeholder,
+.early-access-sign-up-form input[type=password]:focus:-moz-placeholder,
+.early-access-sign-up-form input[type=tel]:focus:-moz-placeholder,
+.early-access-sign-up-form input[type=text]:focus:-moz-placeholder,
+.early-access-sign-up-form select:focus:-moz-placeholder,
+.early-access-sign-up-form textarea:focus:-moz-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: 0
 }
 
-.slides-form input[type=email]:focus::-moz-placeholder,
-.slides-form input[type=name]:focus::-moz-placeholder,
-.slides-form input[type=number]:focus::-moz-placeholder,
-.slides-form input[type=password]:focus::-moz-placeholder,
-.slides-form input[type=tel]:focus::-moz-placeholder,
-.slides-form input[type=text]:focus::-moz-placeholder,
-.slides-form select:focus::-moz-placeholder,
-.slides-form textarea:focus::-moz-placeholder {
+.early-access-sign-up-form input[type=email]:focus::-moz-placeholder,
+.early-access-sign-up-form input[type=name]:focus::-moz-placeholder,
+.early-access-sign-up-form input[type=number]:focus::-moz-placeholder,
+.early-access-sign-up-form input[type=password]:focus::-moz-placeholder,
+.early-access-sign-up-form input[type=tel]:focus::-moz-placeholder,
+.early-access-sign-up-form input[type=text]:focus::-moz-placeholder,
+.early-access-sign-up-form select:focus::-moz-placeholder,
+.early-access-sign-up-form textarea:focus::-moz-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: 0
 }
 
-.slides-form input[type=email]:focus:-ms-input-placeholder,
-.slides-form input[type=name]:focus:-ms-input-placeholder,
-.slides-form input[type=number]:focus:-ms-input-placeholder,
-.slides-form input[type=password]:focus:-ms-input-placeholder,
-.slides-form input[type=tel]:focus:-ms-input-placeholder,
-.slides-form input[type=text]:focus:-ms-input-placeholder,
-.slides-form select:focus:-ms-input-placeholder,
-.slides-form textarea:focus:-ms-input-placeholder {
+.early-access-sign-up-form input[type=email]:focus:-ms-input-placeholder,
+.early-access-sign-up-form input[type=name]:focus:-ms-input-placeholder,
+.early-access-sign-up-form input[type=number]:focus:-ms-input-placeholder,
+.early-access-sign-up-form input[type=password]:focus:-ms-input-placeholder,
+.early-access-sign-up-form input[type=tel]:focus:-ms-input-placeholder,
+.early-access-sign-up-form input[type=text]:focus:-ms-input-placeholder,
+.early-access-sign-up-form select:focus:-ms-input-placeholder,
+.early-access-sign-up-form textarea:focus:-ms-input-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: 0
 }
 
-.slides-form input[type=email]:not(textarea).round,
-.slides-form input[type=name]:not(textarea).round,
-.slides-form input[type=number]:not(textarea).round,
-.slides-form input[type=password]:not(textarea).round,
-.slides-form input[type=tel]:not(textarea).round,
-.slides-form input[type=text]:not(textarea).round,
-.slides-form select:not(textarea).round,
-.slides-form textarea:not(textarea).round {
+.early-access-sign-up-form input[type=email]:not(textarea).round,
+.early-access-sign-up-form input[type=name]:not(textarea).round,
+.early-access-sign-up-form input[type=number]:not(textarea).round,
+.early-access-sign-up-form input[type=password]:not(textarea).round,
+.early-access-sign-up-form input[type=tel]:not(textarea).round,
+.early-access-sign-up-form input[type=text]:not(textarea).round,
+.early-access-sign-up-form select:not(textarea).round,
+.early-access-sign-up-form textarea:not(textarea).round {
     border-radius: 22px;
     padding-left: 22px;
     padding-right: 22px
 }
 
-.slides-form input[type=email].rounded,
-.slides-form input[type=name].rounded,
-.slides-form input[type=number].rounded,
-.slides-form input[type=password].rounded,
-.slides-form input[type=tel].rounded,
-.slides-form input[type=text].rounded,
-.slides-form select.rounded,
-.slides-form textarea.rounded {
+.early-access-sign-up-form input[type=email].rounded,
+.early-access-sign-up-form input[type=name].rounded,
+.early-access-sign-up-form input[type=number].rounded,
+.early-access-sign-up-form input[type=password].rounded,
+.early-access-sign-up-form input[type=tel].rounded,
+.early-access-sign-up-form input[type=text].rounded,
+.early-access-sign-up-form select.rounded,
+.early-access-sign-up-form textarea.rounded {
     border-radius: 6px
 }
 
-.slides-form input[type=email]:after,
-.slides-form input[type=name]:after,
-.slides-form input[type=number]:after,
-.slides-form input[type=password]:after,
-.slides-form input[type=tel]:after,
-.slides-form input[type=text]:after,
-.slides-form select:after,
-.slides-form textarea:after {
+.early-access-sign-up-form input[type=email]:after,
+.early-access-sign-up-form input[type=name]:after,
+.early-access-sign-up-form input[type=number]:after,
+.early-access-sign-up-form input[type=password]:after,
+.early-access-sign-up-form input[type=tel]:after,
+.early-access-sign-up-form input[type=text]:after,
+.early-access-sign-up-form select:after,
+.early-access-sign-up-form textarea:after {
     content: "";
     position: absolute;
     top: 0;
@@ -1144,82 +1144,82 @@ img.rounded {
 
 @media (min-width:768px) {
 
-    .slides-form input[type=email],
-    .slides-form input[type=name],
-    .slides-form input[type=number],
-    .slides-form input[type=password],
-    .slides-form input[type=tel],
-    .slides-form input[type=text],
-    .slides-form select,
-    .slides-form textarea {
+    .early-access-sign-up-form input[type=email],
+    .early-access-sign-up-form input[type=name],
+    .early-access-sign-up-form input[type=number],
+    .early-access-sign-up-form input[type=password],
+    .early-access-sign-up-form input[type=tel],
+    .early-access-sign-up-form input[type=text],
+    .early-access-sign-up-form select,
+    .early-access-sign-up-form textarea {
         max-width: 300px
     }
 }
 
-.slides-form input[type=email]::-webkit-input-placeholder,
-.slides-form input[type=name]::-webkit-input-placeholder,
-.slides-form input[type=number]::-webkit-input-placeholder,
-.slides-form input[type=password]::-webkit-input-placeholder,
-.slides-form input[type=tel]::-webkit-input-placeholder,
-.slides-form input[type=text]::-webkit-input-placeholder,
-.slides-form select::-webkit-input-placeholder,
-.slides-form textarea::-webkit-input-placeholder {
+.early-access-sign-up-form input[type=email]::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=name]::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=number]::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=password]::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=tel]::-webkit-input-placeholder,
+.early-access-sign-up-form input[type=text]::-webkit-input-placeholder,
+.early-access-sign-up-form select::-webkit-input-placeholder,
+.early-access-sign-up-form textarea::-webkit-input-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: .5
 }
 
-.slides-form input[type=email]:-moz-placeholder,
-.slides-form input[type=name]:-moz-placeholder,
-.slides-form input[type=number]:-moz-placeholder,
-.slides-form input[type=password]:-moz-placeholder,
-.slides-form input[type=tel]:-moz-placeholder,
-.slides-form input[type=text]:-moz-placeholder,
-.slides-form select:-moz-placeholder,
-.slides-form textarea:-moz-placeholder {
+.early-access-sign-up-form input[type=email]:-moz-placeholder,
+.early-access-sign-up-form input[type=name]:-moz-placeholder,
+.early-access-sign-up-form input[type=number]:-moz-placeholder,
+.early-access-sign-up-form input[type=password]:-moz-placeholder,
+.early-access-sign-up-form input[type=tel]:-moz-placeholder,
+.early-access-sign-up-form input[type=text]:-moz-placeholder,
+.early-access-sign-up-form select:-moz-placeholder,
+.early-access-sign-up-form textarea:-moz-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: .5
 }
 
-.slides-form input[type=email]::-moz-placeholder,
-.slides-form input[type=name]::-moz-placeholder,
-.slides-form input[type=number]::-moz-placeholder,
-.slides-form input[type=password]::-moz-placeholder,
-.slides-form input[type=tel]::-moz-placeholder,
-.slides-form input[type=text]::-moz-placeholder,
-.slides-form select::-moz-placeholder,
-.slides-form textarea::-moz-placeholder {
+.early-access-sign-up-form input[type=email]::-moz-placeholder,
+.early-access-sign-up-form input[type=name]::-moz-placeholder,
+.early-access-sign-up-form input[type=number]::-moz-placeholder,
+.early-access-sign-up-form input[type=password]::-moz-placeholder,
+.early-access-sign-up-form input[type=tel]::-moz-placeholder,
+.early-access-sign-up-form input[type=text]::-moz-placeholder,
+.early-access-sign-up-form select::-moz-placeholder,
+.early-access-sign-up-form textarea::-moz-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: .5
 }
 
-.slides-form input[type=email]:-ms-input-placeholder,
-.slides-form input[type=name]:-ms-input-placeholder,
-.slides-form input[type=number]:-ms-input-placeholder,
-.slides-form input[type=password]:-ms-input-placeholder,
-.slides-form input[type=tel]:-ms-input-placeholder,
-.slides-form input[type=text]:-ms-input-placeholder,
-.slides-form select:-ms-input-placeholder,
-.slides-form textarea:-ms-input-placeholder {
+.early-access-sign-up-form input[type=email]:-ms-input-placeholder,
+.early-access-sign-up-form input[type=name]:-ms-input-placeholder,
+.early-access-sign-up-form input[type=number]:-ms-input-placeholder,
+.early-access-sign-up-form input[type=password]:-ms-input-placeholder,
+.early-access-sign-up-form input[type=tel]:-ms-input-placeholder,
+.early-access-sign-up-form input[type=text]:-ms-input-placeholder,
+.early-access-sign-up-form select:-ms-input-placeholder,
+.early-access-sign-up-form textarea:-ms-input-placeholder {
     color: #242424;
     font-weight: 400;
     opacity: .5
 }
 
-.slides-form input[type=email],
-.slides-form input[type=name],
-.slides-form input[type=number],
-.slides-form input[type=password],
-.slides-form input[type=tel],
-.slides-form input[type=text],
-.slides-form select {
+.early-access-sign-up-form input[type=email],
+.early-access-sign-up-form input[type=name],
+.early-access-sign-up-form input[type=number],
+.early-access-sign-up-form input[type=password],
+.early-access-sign-up-form input[type=tel],
+.early-access-sign-up-form input[type=text],
+.early-access-sign-up-form select {
     height: 52px;
     padding: 0 16px
 }
 
-.slides-form textarea {
+.early-access-sign-up-form textarea {
     font-weight: 400;
     line-height: 1.5;
     padding-top: 10px !important;
@@ -1228,15 +1228,15 @@ img.rounded {
     min-height: 52px
 }
 
-.slides-form textarea.d {
+.early-access-sign-up-form textarea.d {
     border-radius: 15px !important
 }
 
-.slides-form textarea.round {
+.early-access-sign-up-form textarea.round {
     border-radius: 22px !important
 }
 
-.slides-form select {
+.early-access-sign-up-form select {
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="7"><path fill="rgb(23,23,23)" d="M14.022 0l5.978 6 6-6z"/></svg>');
     background-repeat: no-repeat;
     background-position: right;
@@ -1245,47 +1245,47 @@ img.rounded {
     appearance: none
 }
 
-.slides-form button[type=submit],
-.slides-form input[type=email],
-.slides-form input[type=name],
-.slides-form input[type=number],
-.slides-form input[type=password],
-.slides-form input[type=submit],
-.slides-form input[type=tel],
-.slides-form input[type=text],
-.slides-form select,
-.slides-form textarea {
+.early-access-sign-up-form button[type=submit],
+.early-access-sign-up-form input[type=email],
+.early-access-sign-up-form input[type=name],
+.early-access-sign-up-form input[type=number],
+.early-access-sign-up-form input[type=password],
+.early-access-sign-up-form input[type=submit],
+.early-access-sign-up-form input[type=tel],
+.early-access-sign-up-form input[type=text],
+.early-access-sign-up-form select,
+.early-access-sign-up-form textarea {
     margin: 5px
 }
 
 @media (min-width:768px) {
 
-    .slides-form button[type=submit],
-    .slides-form input[type=email],
-    .slides-form input[type=name],
-    .slides-form input[type=number],
-    .slides-form input[type=password],
-    .slides-form input[type=submit],
-    .slides-form input[type=tel],
-    .slides-form input[type=text],
-    .slides-form select,
-    .slides-form textarea {
+    .early-access-sign-up-form button[type=submit],
+    .early-access-sign-up-form input[type=email],
+    .early-access-sign-up-form input[type=name],
+    .early-access-sign-up-form input[type=number],
+    .early-access-sign-up-form input[type=password],
+    .early-access-sign-up-form input[type=submit],
+    .early-access-sign-up-form input[type=tel],
+    .early-access-sign-up-form input[type=text],
+    .early-access-sign-up-form select,
+    .early-access-sign-up-form textarea {
         max-width: 300px
     }
 }
 
 @media (max-width:768px) {
 
-    .slides-form button[type=submit],
-    .slides-form input[type=email],
-    .slides-form input[type=name],
-    .slides-form input[type=number],
-    .slides-form input[type=password],
-    .slides-form input[type=submit],
-    .slides-form input[type=tel],
-    .slides-form input[type=text],
-    .slides-form select,
-    .slides-form textarea {
+    .early-access-sign-up-form button[type=submit],
+    .early-access-sign-up-form input[type=email],
+    .early-access-sign-up-form input[type=name],
+    .early-access-sign-up-form input[type=number],
+    .early-access-sign-up-form input[type=password],
+    .early-access-sign-up-form input[type=submit],
+    .early-access-sign-up-form input[type=tel],
+    .early-access-sign-up-form input[type=text],
+    .early-access-sign-up-form select,
+    .early-access-sign-up-form textarea {
         margin-left: auto !important;
         margin-right: auto !important;
         width: 100%;
@@ -1293,17 +1293,17 @@ img.rounded {
     }
 }
 
-.slides-form button[type=submit].wide,
-.slides-form input[type=email].wide,
-.slides-form input[type=name].wide,
-.slides-form input[type=number].wide,
-.slides-form input[type=password].wide,
-.slides-form input[type=submit].wide,
-.slides-form input[type=tel].wide,
-.slides-form input[type=text].wide,
-.slides-form label.wide,
-.slides-form select.wide,
-.slides-form textarea.wide {
+.early-access-sign-up-form button[type=submit].wide,
+.early-access-sign-up-form input[type=email].wide,
+.early-access-sign-up-form input[type=name].wide,
+.early-access-sign-up-form input[type=number].wide,
+.early-access-sign-up-form input[type=password].wide,
+.early-access-sign-up-form input[type=submit].wide,
+.early-access-sign-up-form input[type=tel].wide,
+.early-access-sign-up-form input[type=text].wide,
+.early-access-sign-up-form label.wide,
+.early-access-sign-up-form select.wide,
+.early-access-sign-up-form textarea.wide {
     max-width: 100%;
     width: 100%;
     margin-left: 0 !important;
@@ -1311,7 +1311,7 @@ img.rounded {
 }
 
 @media (min-width:769px) {
-    .slides-form input.pair {
+    .early-access-sign-up-form input.pair {
         width: 50% !important;
         max-width: 50% !important;
         border-top-right-radius: 0 !important;
@@ -1320,7 +1320,7 @@ img.rounded {
         margin-right: 0
     }
 
-    .slides-form input.pair+.pair {
+    .early-access-sign-up-form input.pair+.pair {
         width: calc(50% + 1px) !important;
         max-width: calc(50% + 1px) !important;
         margin-left: -1px;
@@ -7357,8 +7357,8 @@ html:not(.page-loaded) .dialog {
 
 @media (max-width:1334px) {
 
-    form.slides-form .button-9,
-    form.slides-form .input-9 {
+    form.early-access-sign-up-form .button-9,
+    form.early-access-sign-up-form .input-9 {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -7380,7 +7380,7 @@ html:not(.page-loaded) .dialog {
 }
 
 @media (min-width:768px) {
-    form.slides-form .input-12 {
+    form.early-access-sign-up-form .input-12 {
         max-width: 300px
     }
 }

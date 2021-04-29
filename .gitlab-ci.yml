@@ -4,6 +4,8 @@ pages:
   stage: deploy
   script:
   - echo 'Nothing to do...'
+  tags:
+    - build
   artifacts:
     paths:
     - public

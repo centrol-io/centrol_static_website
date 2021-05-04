@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+.custom-body {
+    text-align: justify;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 body,
 html,
 img {
@@ -36,20 +44,24 @@ html {
 
 @-webkit-keyframes rotation {
     from {
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 
     to {
+        -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
 }
 
 @keyframes rotation {
     from {
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 
     to {
+        -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
 }
@@ -288,6 +300,7 @@ img.rounded {
     letter-spacing: normal !important;
     position: relative;
     white-space: nowrap;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1), 0 2px 6px rgba(0, 0, 0, .1);
     -webkit-appearance: none;
@@ -312,6 +325,7 @@ img.rounded {
 
 .button.actionButton:hover:not(:active),
 .button:hover {
+    -webkit-transform: translateY(0) !important;
     transform: translateY(0) !important
 }
 
@@ -475,6 +489,7 @@ img.rounded {
 
 .button:active {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1), 0 0 10px 0 rgba(0, 0, 0, .1), 0 1px 4px -1px rgba(0, 0, 0, .1);
+    -webkit-transform: translateY(2px) !important;
     transform: translateY(2px) !important;
     transition: .35s !important
 }
@@ -757,6 +772,7 @@ img.rounded {
 }
 
 .button.play:hover {
+    -webkit-transform: scale(1.05);
     transform: scale(1.05)
 }
 
@@ -913,6 +929,7 @@ img.rounded {
 }
 
 .slides:not(.mobile).dot:hover:after {
+    -webkit-transform: scale(1.333333);
     transform: scale(1.333333);
     opacity: 1
 }
@@ -920,6 +937,7 @@ img.rounded {
 .dot.selected:after,
 .dot:active:after {
     opacity: 1;
+    -webkit-transform: scale(1.675);
     transform: scale(1.675)
 }
 
@@ -1350,6 +1368,7 @@ img.rounded {
 }
 
 .slide.active {
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
@@ -1594,6 +1613,7 @@ img.rounded {
     width: auto;
     height: auto;
     z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover
 }
@@ -1644,10 +1664,12 @@ html:not(.mobile) .slide.video .background[style] {
 }
 
 .videoThumbnail:hover {
+    -webkit-transform: scale(1.025);
     transform: scale(1.025)
 }
 
 .videoThumbnail:hover:before {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     transition: .25s
 }
@@ -1841,6 +1863,7 @@ html.mobile .showForMobileInline {
     text-align: left;
     bottom: 50%;
     margin-bottom: 10px;
+    -webkit-transform: translateY(10px) scale(.95);
     transform: translateY(10px) scale(.95);
     transition: .25s;
     opacity: 0;
@@ -1870,6 +1893,7 @@ html.mobile .showForMobileInline {
 
 .helpBubble:hover .helpMessage {
     pointer-events: all;
+    -webkit-transform: translateY(0) scale(1);
     transform: translateY(0) scale(1);
     opacity: 1
 }
@@ -1892,6 +1916,7 @@ html.mobile .showForMobileInline {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
 
@@ -1915,6 +1940,7 @@ html.mobile .showForMobileInline {
 .slides:not(.firstSlide) .panel.top.firstSlideOnly,
 .slides:not(.firstSlide):not(.lastSlide) .panel.top.firstAndLastSlidesOnly,
 .slides:not(.lastSlide) .panel.top.lastSlideOnly {
+    -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     opacity: 0
 }
@@ -1927,13 +1953,17 @@ html.mobile .showForMobileInline {
 .slides:not(.firstSlide) .panel.bottom.firstSlideOnly,
 .slides:not(.firstSlide):not(.lastSlide) .panel.bottom.firstAndLastSlidesOnly,
 .slides:not(.lastSlide) .panel.bottom.lastSlideOnly {
+    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     opacity: 0
 }
 
 .page-loaded .animateOnEvent .panel,
 .page-loaded .animated .panel {
+    transition: opacity .5s, padding .5s, -webkit-transform .5s;
     transition: transform .5s, opacity .5s, padding .5s;
+    transition: transform .5s, opacity .5s, padding .5s, -webkit-transform .5s;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1
 }
@@ -1944,12 +1974,14 @@ html.mobile .showForMobileInline {
 
 .mobile .simplifiedMobile .panel.hideOnScroll.top.hide,
 .scroll .panel.hideOnScroll.top.hide {
+    -webkit-transform: translateY(-100%) !important;
     transform: translateY(-100%) !important;
     opacity: 0
 }
 
 .mobile .simplifiedMobile .panel.hideOnScroll.bottom.hide,
 .scroll .panel.hideOnScroll.bottom.hide {
+    -webkit-transform: translateY(100%) !important;
     transform: translateY(100%) !important;
     opacity: 0
 }
@@ -2093,6 +2125,7 @@ html.mobile .showForMobileInline {
 }
 
 .panel .button:not(.actionButton):hover:not(:active) {
+    -webkit-transform: translateY(0) !important;
     transform: translateY(0) !important;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, .05), 0 4px 6px 0 rgba(0, 0, 0, .1), 0 1px 10px 0 rgba(0, 0, 0, .1)
 }
@@ -2147,10 +2180,12 @@ html.mobile .showForMobileInline {
 
     100%,
     80% {
+        -webkit-transform: translateY(0);
         transform: translateY(0)
     }
 
     90% {
+        -webkit-transform: translateY(10px);
         transform: translateY(10px)
     }
 }
@@ -2159,10 +2194,12 @@ html.mobile .showForMobileInline {
 
     100%,
     80% {
+        -webkit-transform: translateY(0);
         transform: translateY(0)
     }
 
     90% {
+        -webkit-transform: translateY(10px);
         transform: translateY(10px)
     }
 }
@@ -2205,6 +2242,7 @@ html.mobile .showForMobileInline {
     pointer-events: none;
     opacity: 1;
     transition: opacity .5s;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
 
@@ -2348,6 +2386,7 @@ html.mobile .showForMobileInline {
 }
 
 .panel.bottom .navigation li:before {
+    -webkit-transform: translateY(-100%) translateX(-50%);
     transform: translateY(-100%) translateX(-50%);
     left: 14px;
     top: -2px
@@ -2388,14 +2427,17 @@ html.mobile .showForMobileInline {
 
 .diamond .navigation.default li:after {
     border-radius: 0;
+    -webkit-transform: rotate(45deg) scale(.72);
     transform: rotate(45deg) scale(.72)
 }
 
 .diamond.medium .navigation.default li:after {
+    -webkit-transform: rotate(45deg) scale(.88);
     transform: rotate(45deg) scale(.88)
 }
 
 .diamond.small .navigation.default li:after {
+    -webkit-transform: rotate(45deg) scale(1);
     transform: rotate(45deg) scale(1)
 }
 
@@ -2608,9 +2650,13 @@ html.mobile .showForMobileInline {
     border-radius: 6px;
     text-align: center;
     cursor: default;
+    -webkit-transform: translateY(0) scale(.9);
     transform: translateY(0) scale(.9);
+    -webkit-transform-origin: top;
     transform-origin: top;
-    transition: transform .35s, opacity .35s, box-shadow .35s
+    transition: opacity .35s, box-shadow .35s, -webkit-transform .35s;
+    transition: transform .35s, opacity .35s, box-shadow .35s;
+    transition: transform .35s, opacity .35s, box-shadow .35s, -webkit-transform .35s
 }
 
 .dropdown:not(.show) {
@@ -2663,6 +2709,7 @@ html.mobile .showForMobileInline {
 
 .dropdown.show {
     opacity: 1;
+    -webkit-transform: translateY(20px);
     transform: translateY(20px)
 }
 
@@ -2673,19 +2720,23 @@ html.mobile .showForMobileInline {
 }
 
 .dropdown.show.hide {
+    -webkit-transform: translateY(40px);
     transform: translateY(40px);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .15), 0 0 0 rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .05)
 }
 
 .dropdown.bottom {
+    -webkit-transform-origin: bottom;
     transform-origin: bottom
 }
 
 .dropdown.bottom.show {
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px)
 }
 
 .dropdown.bottom.show.hide {
+    -webkit-transform: translateY(-40px);
     transform: translateY(-40px)
 }
 
@@ -2786,6 +2837,7 @@ html.mobile .showForMobileInline {
     color: #fff;
     z-index: 500;
     background: #0E0E0E;
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
     -webkit-overflow-scrolling: touch
 }
@@ -2806,6 +2858,7 @@ html:not(.page-loaded) .sidebar {
 }
 
 .sidebarShown .sidebar.visible {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1
 }
@@ -2827,17 +2880,20 @@ html:not(.page-loaded) .sidebar {
 .sidebar.left {
     right: inherit;
     left: 0;
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%)
 }
 
 .sidebar.top {
     top: 0;
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%)
 }
 
 .sidebar.bottom {
     bottom: 0;
     top: inherit;
+    -webkit-transform: translateY(100%);
     transform: translateY(100%)
 }
 
@@ -2870,6 +2926,7 @@ html:not(.page-loaded) .sidebar {
 }
 
 .sidebar .close:active svg {
+    -webkit-transform: scale(.92);
     transform: scale(.92)
 }
 
@@ -2970,6 +3027,7 @@ html:not(.page-loaded) .sidebar {
 }
 
 .page-loaded.sidebarShown .slide.selected {
+    -webkit-transform: scale(.95) !important;
     transform: scale(.95) !important;
     pointer-events: none;
     opacity: .5 !important
@@ -2981,11 +3039,13 @@ html:not(.page-loaded) .sidebar {
 
 .sidebarShown .panel.bottom {
     opacity: .5;
+    -webkit-transform: scale(.95) translateY(-10%);
     transform: scale(.95) translateY(-10%)
 }
 
 .popup,
 .popup .close:not(.button) {
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     position: fixed;
     top: 0;
@@ -2996,7 +3056,9 @@ html:not(.page-loaded) .sidebar {
 .page-loaded.sidebarShown .slide.selected,
 .page-loaded.sidebarShown .slide.selected:after,
 .sidebar {
-    transition: transform .5s, opacity .5s !important
+    transition: opacity .5s, -webkit-transform .5s !important;
+    transition: transform .5s, opacity .5s !important;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s !important
 }
 
 .popup {
@@ -3004,7 +3066,9 @@ html:not(.page-loaded) .sidebar {
     height: 100%;
     color: #fff;
     z-index: 1000;
+    transition: opacity .5s, -webkit-transform .5s;
     transition: transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s;
     display: none
 }
 
@@ -3228,6 +3292,7 @@ html:not(.page-loaded) .sidebar {
     white-space: nowrap;
     letter-spacing: .04em;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, .07);
+    -webkit-transform: translateY(100%) translateX(-50%);
     transform: translateY(100%) translateX(-50%);
     left: 50%;
     top: 0
@@ -3263,15 +3328,18 @@ p {
 .tooltip[data-tooltip-title].top:before {
     bottom: 0;
     top: auto;
+    -webkit-transform: translateY(-100%) translateX(-50%);
     transform: translateY(-100%) translateX(-50%)
 }
 
 .slide.before {
+    -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0)
 }
 
 .slide.after,
 .slide:not(.before):first-child {
+    -webkit-transform: translate3d(0, 50%, 0);
     transform: translate3d(0, 50%, 0)
 }
 
@@ -3281,6 +3349,7 @@ p {
 }
 
 .slide.selected {
+    -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
     z-index: 11
 }
@@ -3295,71 +3364,86 @@ p {
 
 .horizontal .slide,
 .horizontal .slide.before {
+    -webkit-transform: translate3D(-50%, 0, 0);
     transform: translate3D(-50%, 0, 0)
 }
 
 .horizontal .slide.after {
+    -webkit-transform: translate3D(50%, 0, 0);
     transform: translate3D(50%, 0, 0)
 }
 
 .film .slide.before {
+    -webkit-transform: translate3D(0, -100%, 0);
     transform: translate3D(0, -100%, 0)
 }
 
 .film .slide.after {
+    -webkit-transform: translate3D(0, 100%, 0);
     transform: translate3D(0, 100%, 0)
 }
 
 .film.horizontal .slide.before {
+    -webkit-transform: translate3D(-100%, 0, 0);
     transform: translate3D(-100%, 0, 0)
 }
 
 .film.horizontal .slide,
 .film.horizontal .slide.after {
+    -webkit-transform: translate3D(100%, 0, 0);
     transform: translate3D(100%, 0, 0)
 }
 
 .chain .slide.before {
+    -webkit-transform: translate3D(0, -100%, 0);
     transform: translate3D(0, -100%, 0);
     opacity: 1
 }
 
 .chain .slide.after {
+    -webkit-transform: translate3D(0, 100%, 0);
     transform: translate3D(0, 100%, 0);
     opacity: 1
 }
 
 .chain.horizontal .slide.before {
+    -webkit-transform: translate3D(-100%, 0, 0);
     transform: translate3D(-100%, 0, 0);
     opacity: 1
 }
 
 .chain.horizontal .slide,
 .chain.horizontal .slide.after {
+    -webkit-transform: translate3D(100%, 0, 0);
     transform: translate3D(100%, 0, 0);
     opacity: 1
 }
 
 .zen .slide.before {
+    -webkit-transform: translateY(-100%) scale(.8);
     transform: translateY(-100%) scale(.8)
 }
 
 .zen .slide,
 .zen .slide.after {
+    -webkit-transform: translateY(100%) scale(.8);
     transform: translateY(100%) scale(.8)
 }
 
 .zen.horizontal .slide.before {
+    -webkit-transform: translateX(-100%) scale(.8);
     transform: translateX(-100%) scale(.8)
 }
 
 .zen.horizontal .slide,
 .zen.horizontal .slide.after {
+    -webkit-transform: translateX(100%) scale(.8);
     transform: translateX(100%) scale(.8)
 }
 
 .stack .slide,
 .stack .slide.after {
+    -webkit-transform: translateY(100%);
     transform: translateY(100%)
 }
 
@@ -3373,20 +3457,24 @@ p {
 }
 
 .stack .slide.before {
+    -webkit-transform: scale(.9);
     transform: scale(.9)
 }
 
 .stack.horizontal .slide,
 .stack.horizontal .slide.after {
+    -webkit-transform: translateX(100%);
     transform: translateX(100%)
 }
 
 .stack.horizontal .slide.before {
+    -webkit-transform: scale(.9);
     transform: scale(.9)
 }
 
 .cards .slide,
 .cards .slide.after {
+    -webkit-transform: translateY(10%);
     transform: translateY(10%);
     opacity: initial
 }
@@ -3401,6 +3489,7 @@ p {
 }
 
 .cards .slide.before {
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     z-index: 7
 }
@@ -3411,15 +3500,18 @@ p {
 
 .cards.horizontal .slide,
 .cards.horizontal .slide.after {
+    -webkit-transform: translateX(10%);
     transform: translateX(10%)
 }
 
 .cards.horizontal .slide.before {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%)
 }
 
 .cards2 .slide,
 .cards2 .slide.after {
+    -webkit-transform: translateY(10%);
     transform: translateY(10%);
     opacity: initial
 }
@@ -3434,6 +3526,7 @@ p {
 }
 
 .cards2 .slide.before {
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     z-index: 7
 }
@@ -3444,29 +3537,35 @@ p {
 
 .cards2.horizontal .slide,
 .cards2.horizontal .slide.after {
+    -webkit-transform: translateX(10%);
     transform: translateX(10%)
 }
 
 .cards2.horizontal .slide.before {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%)
 }
 
 .zoom .slide.before {
+    -webkit-transform: scale(1.4);
     transform: scale(1.4)
 }
 
 .zoom .slide,
 .zoom .slide.after {
+    -webkit-transform: scale(.8);
     transform: scale(.8);
     opacity: 0
 }
 
 .vertigo .slide.before {
+    -webkit-transform: scale(1.4) rotate(-2deg);
     transform: scale(1.4) rotate(-2deg)
 }
 
 .vertigo .slide,
 .vertigo .slide.after {
+    -webkit-transform: scale(.8) rotate(2deg);
     transform: scale(.8) rotate(2deg);
     opacity: 0
 }
@@ -3474,6 +3573,7 @@ p {
 .plain .slide,
 .plain .slide.after,
 .plain .slide.before {
+    -webkit-transform: scale(1);
     transform: scale(1)
 }
 
@@ -3485,27 +3585,37 @@ p {
 
 .page-loaded .fast .slide.active,
 .page-loaded .fast .slide.selected {
-    transition: transform .7s, opacity .7s
+    transition: opacity .7s, -webkit-transform .7s;
+    transition: transform .7s, opacity .7s;
+    transition: transform .7s, opacity .7s, -webkit-transform .7s
 }
 
 .page-loaded .slide.active,
 .page-loaded .slide.selected {
-    transition: transform 1s, opacity 1s
+    transition: opacity 1s, -webkit-transform 1s;
+    transition: transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s, -webkit-transform 1s
 }
 
 .page-loaded .slow .slide.active,
 .page-loaded .slow .slide.selected {
-    transition: transform 1.4s, opacity 1.4s
+    transition: opacity 1.4s, -webkit-transform 1.4s;
+    transition: transform 1.4s, opacity 1.4s;
+    transition: transform 1.4s, opacity 1.4s, -webkit-transform 1.4s
 }
 
 .page-loaded .slide.active.entry,
 .page-loaded .slide.selected.entry {
-    transition: transform 0s, opacity 1s
+    transition: opacity 1s, -webkit-transform 0s;
+    transition: transform 0s, opacity 1s;
+    transition: transform 0s, opacity 1s, -webkit-transform 0s
 }
 
 .slides.animateOnEvent .panel,
 .slides.animated .panel {
+    transition: opacity, -webkit-transform;
     transition: transform, opacity;
+    transition: transform, opacity, -webkit-transform;
     transition-duration: 1s
 }
 
@@ -3538,6 +3648,7 @@ p {
 .animated [class*=ae-]:not(.done) {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition-timing-function: cubic-bezier(.25, .1, .2, 1)
 }
@@ -3756,6 +3867,7 @@ p {
 .popup.animated:not(.animateOnEvent) [class*=ae-].fromBottom:not(.done),
 .slides.animated:not(.animateOnEvent) [class*=ae-].fromBottom:not(.done) {
     visibility: hidden;
+    -webkit-transform: translate3d(0, 50px, 0);
     transform: translate3d(0, 50px, 0);
     opacity: 0
 }
@@ -3764,6 +3876,7 @@ p {
 .animated.fromTop [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromTop:not(.done),
 .slides.animated [class*=ae-].fromTop:not(.done) {
+    -webkit-transform: translate3d(0, -50px, 0);
     transform: translate3d(0, -50px, 0)
 }
 
@@ -3771,6 +3884,7 @@ p {
 .animated.fromLeft [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromLeft:not(.done),
 .slides.animated [class*=ae-].fromLeft:not(.done) {
+    -webkit-transform: translate3d(-50px, 0, 0);
     transform: translate3d(-50px, 0, 0)
 }
 
@@ -3778,6 +3892,7 @@ p {
 .animated.fromRight [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromRight:not(.done),
 .slides.animated [class*=ae-].fromRight:not(.done) {
+    -webkit-transform: translate3d(50px, 0, 0);
     transform: translate3d(50px, 0, 0)
 }
 
@@ -3785,6 +3900,7 @@ p {
 .animated.fromCenter [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromCenter:not(.done),
 .slides.animated [class*=ae-].fromCenter:not(.done) {
+    -webkit-transform: scale(.9) translate3d(0, 0, 0);
     transform: scale(.9) translate3d(0, 0, 0)
 }
 
@@ -3792,6 +3908,7 @@ p {
 .animated.fromAbove [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromAbove:not(.done),
 .slides.animated [class*=ae-].fromAbove:not(.done) {
+    -webkit-transform: scale(1.1) translate3d(0, 0, 0);
     transform: scale(1.1) translate3d(0, 0, 0)
 }
 
@@ -3799,6 +3916,7 @@ p {
 .animated.fromBottomLeft [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromBottomLeft:not(.done),
 .slides.animated [class*=ae-].fromBottomLeft:not(.done) {
+    -webkit-transform: translate3d(-50px, 50px, 0);
     transform: translate3d(-50px, 50px, 0)
 }
 
@@ -3806,6 +3924,7 @@ p {
 .animated.fromTopLeft [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromTopLeft:not(.done),
 .slides.animated [class*=ae-].fromTopLeft:not(.done) {
+    -webkit-transform: translate3d(-50px, -50px, 0);
     transform: translate3d(-50px, -50px, 0)
 }
 
@@ -3813,6 +3932,7 @@ p {
 .animated.fromBottomRight [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromBottomRight:not(.done),
 .slides.animated [class*=ae-].fromBottomRight:not(.done) {
+    -webkit-transform: translate3d(50px, 50px, 0);
     transform: translate3d(50px, 50px, 0)
 }
 
@@ -3820,6 +3940,7 @@ p {
 .animated.fromTopRight [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromTopRight:not(.done),
 .slides.animated [class*=ae-].fromTopRight:not(.done) {
+    -webkit-transform: translate3d(50px, -50px, 0);
     transform: translate3d(50px, -50px, 0)
 }
 
@@ -3827,6 +3948,7 @@ p {
 .animated.fadeIn [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fadeIn:not(.done),
 .slides.animated [class*=ae-].fadeIn:not(.done) {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
     transform: scale(1) translate3d(0, 0, 0)
 }
 
@@ -3834,6 +3956,7 @@ p {
 .animated.fromBlur [class*=ae-]:not(.done),
 .popup.animated [class*=ae-].fromBlur:not(.done),
 .slides.animated [class*=ae-].fromBlur:not(.done) {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
     transform: scale(1) translate3d(0, 0, 0);
     -webkit-filter: blur(10px);
     filter: blur(10px)
@@ -3846,6 +3969,7 @@ p {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-filter: none;
     filter: none
@@ -3975,6 +4099,7 @@ p {
 
 @-webkit-keyframes fromBottom {
     from {
+        -webkit-transform: translate3d(0, 50px, 0);
         transform: translate3d(0, 50px, 0);
         opacity: 0
     }
@@ -3982,6 +4107,7 @@ p {
 
 @keyframes fromBottom {
     from {
+        -webkit-transform: translate3d(0, 50px, 0);
         transform: translate3d(0, 50px, 0);
         opacity: 0
     }
@@ -3989,6 +4115,7 @@ p {
 
 @-webkit-keyframes fromTop {
     from {
+        -webkit-transform: translate3d(0, -50px, 0);
         transform: translate3d(0, -50px, 0);
         opacity: 0
     }
@@ -3996,6 +4123,7 @@ p {
 
 @keyframes fromTop {
     from {
+        -webkit-transform: translate3d(0, -50px, 0);
         transform: translate3d(0, -50px, 0);
         opacity: 0
     }
@@ -4003,6 +4131,7 @@ p {
 
 @-webkit-keyframes fromLeft {
     from {
+        -webkit-transform: translate3d(-25px, 0, 0);
         transform: translate3d(-25px, 0, 0);
         opacity: 0
     }
@@ -4010,6 +4139,7 @@ p {
 
 @keyframes fromLeft {
     from {
+        -webkit-transform: translate3d(-25px, 0, 0);
         transform: translate3d(-25px, 0, 0);
         opacity: 0
     }
@@ -4017,6 +4147,7 @@ p {
 
 @-webkit-keyframes fromRight {
     from {
+        -webkit-transform: translate3d(25px, 0, 0);
         transform: translate3d(25px, 0, 0);
         opacity: 0
     }
@@ -4024,6 +4155,7 @@ p {
 
 @keyframes fromRight {
     from {
+        -webkit-transform: translate3d(25px, 0, 0);
         transform: translate3d(25px, 0, 0);
         opacity: 0
     }
@@ -4031,6 +4163,7 @@ p {
 
 @-webkit-keyframes fromCenter {
     from {
+        -webkit-transform: scale(.9) translate3d(0, 0, 0);
         transform: scale(.9) translate3d(0, 0, 0);
         opacity: 0
     }
@@ -4038,6 +4171,7 @@ p {
 
 @keyframes fromCenter {
     from {
+        -webkit-transform: scale(.9) translate3d(0, 0, 0);
         transform: scale(.9) translate3d(0, 0, 0);
         opacity: 0
     }
@@ -4045,6 +4179,7 @@ p {
 
 @-webkit-keyframes fromAbove {
     from {
+        -webkit-transform: scale(1.1) translate3d(0, 0, 0);
         transform: scale(1.1) translate3d(0, 0, 0);
         opacity: 0
     }
@@ -4052,6 +4187,7 @@ p {
 
 @keyframes fromAbove {
     from {
+        -webkit-transform: scale(1.1) translate3d(0, 0, 0);
         transform: scale(1.1) translate3d(0, 0, 0);
         opacity: 0
     }
@@ -4059,6 +4195,7 @@ p {
 
 @-webkit-keyframes fromBottomLeft {
     from {
+        -webkit-transform: translate3d(-50px, 50px, 0);
         transform: translate3d(-50px, 50px, 0);
         opacity: 0
     }
@@ -4066,6 +4203,7 @@ p {
 
 @keyframes fromBottomLeft {
     from {
+        -webkit-transform: translate3d(-50px, 50px, 0);
         transform: translate3d(-50px, 50px, 0);
         opacity: 0
     }
@@ -4073,6 +4211,7 @@ p {
 
 @-webkit-keyframes fromTopLeft {
     from {
+        -webkit-transform: translate3d(-50px, -50px, 0);
         transform: translate3d(-50px, -50px, 0);
         opacity: 0
     }
@@ -4080,6 +4219,7 @@ p {
 
 @keyframes fromTopLeft {
     from {
+        -webkit-transform: translate3d(-50px, -50px, 0);
         transform: translate3d(-50px, -50px, 0);
         opacity: 0
     }
@@ -4087,6 +4227,7 @@ p {
 
 @-webkit-keyframes fromBottomRight {
     from {
+        -webkit-transform: translate3d(50px, 50px, 0);
         transform: translate3d(50px, 50px, 0);
         opacity: 0
     }
@@ -4094,6 +4235,7 @@ p {
 
 @keyframes fromBottomRight {
     from {
+        -webkit-transform: translate3d(50px, 50px, 0);
         transform: translate3d(50px, 50px, 0);
         opacity: 0
     }
@@ -4101,6 +4243,7 @@ p {
 
 @-webkit-keyframes fromTopRight {
     from {
+        -webkit-transform: translate3d(50px, -50px, 0);
         transform: translate3d(50px, -50px, 0);
         opacity: 0
     }
@@ -4108,6 +4251,7 @@ p {
 
 @keyframes fromTopRight {
     from {
+        -webkit-transform: translate3d(50px, -50px, 0);
         transform: translate3d(50px, -50px, 0);
         opacity: 0
     }
@@ -4115,6 +4259,7 @@ p {
 
 @-webkit-keyframes fadeIn {
     from {
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
         transform: scale(1) translate3d(0, 0, 0);
         opacity: 0
     }
@@ -4122,6 +4267,7 @@ p {
 
 @keyframes fadeIn {
     from {
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
         transform: scale(1) translate3d(0, 0, 0);
         opacity: 0
     }
@@ -4129,6 +4275,7 @@ p {
 
 @-webkit-keyframes fromBlur {
     from {
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
         transform: scale(1) translate3d(0, 0, 0);
         -webkit-filter: blur(10px);
         filter: blur(10px);
@@ -4138,6 +4285,7 @@ p {
 
 @keyframes fromBlur {
     from {
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
         transform: scale(1) translate3d(0, 0, 0);
         -webkit-filter: blur(10px);
         filter: blur(10px);
@@ -4289,6 +4437,7 @@ p {
 
 .slides:not(.scroll) .rolling-element {
     transition: 1s;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
 
@@ -4301,162 +4450,202 @@ p {
 }
 
 .slides:not(.scroll) .slide.before .rolling-element {
+    -webkit-transform: translateY(100%);
     transform: translateY(100%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-10 {
+    -webkit-transform: translateY(10%);
     transform: translateY(10%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-20 {
+    -webkit-transform: translateY(20%);
     transform: translateY(20%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-30 {
+    -webkit-transform: translateY(30%);
     transform: translateY(30%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-40 {
+    -webkit-transform: translateY(40%);
     transform: translateY(40%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-50 {
+    -webkit-transform: translateY(50%);
     transform: translateY(50%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-60 {
+    -webkit-transform: translateY(60%);
     transform: translateY(60%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-70 {
+    -webkit-transform: translateY(70%);
     transform: translateY(70%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-80 {
+    -webkit-transform: translateY(80%);
     transform: translateY(80%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.pct-90 {
+    -webkit-transform: translateY(90%);
     transform: translateY(90%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse {
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-10 {
+    -webkit-transform: translateY(-10%);
     transform: translateY(-10%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-20 {
+    -webkit-transform: translateY(-20%);
     transform: translateY(-20%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-30 {
+    -webkit-transform: translateY(-30%);
     transform: translateY(-30%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-40 {
+    -webkit-transform: translateY(-40%);
     transform: translateY(-40%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-50 {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-60 {
+    -webkit-transform: translateY(-60%);
     transform: translateY(-60%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-70 {
+    -webkit-transform: translateY(-70%);
     transform: translateY(-70%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-80 {
+    -webkit-transform: translateY(-80%);
     transform: translateY(-80%)
 }
 
 .slides:not(.scroll) .slide.before .rolling-element.inverse.pct-90 {
+    -webkit-transform: translateY(-90%);
     transform: translateY(-90%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element {
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-10 {
+    -webkit-transform: translateY(-10%);
     transform: translateY(-10%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-20 {
+    -webkit-transform: translateY(-20%);
     transform: translateY(-20%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-30 {
+    -webkit-transform: translateY(-30%);
     transform: translateY(-30%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-40 {
+    -webkit-transform: translateY(-40%);
     transform: translateY(-40%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-50 {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-60 {
+    -webkit-transform: translateY(-60%);
     transform: translateY(-60%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-70 {
+    -webkit-transform: translateY(-70%);
     transform: translateY(-70%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-80 {
+    -webkit-transform: translateY(-80%);
     transform: translateY(-80%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.pct-90 {
+    -webkit-transform: translateY(-90%);
     transform: translateY(-90%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse {
+    -webkit-transform: translateY(100%);
     transform: translateY(100%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-10 {
+    -webkit-transform: translateY(10%);
     transform: translateY(10%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-20 {
+    -webkit-transform: translateY(20%);
     transform: translateY(20%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-30 {
+    -webkit-transform: translateY(30%);
     transform: translateY(30%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-40 {
+    -webkit-transform: translateY(40%);
     transform: translateY(40%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-50 {
+    -webkit-transform: translateY(50%);
     transform: translateY(50%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-60 {
+    -webkit-transform: translateY(60%);
     transform: translateY(60%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-70 {
+    -webkit-transform: translateY(70%);
     transform: translateY(70%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-80 {
+    -webkit-transform: translateY(80%);
     transform: translateY(80%)
 }
 
 .slides:not(.scroll) .slide.after .rolling-element.inverse.pct-90 {
+    -webkit-transform: translateY(90%);
     transform: translateY(90%)
 }
 
@@ -4464,6 +4653,7 @@ p {
 .slides.animateOnEvent .kenBurns.zoomin .background,
 .slides.animated .kenBurns .background,
 .slides.animated .kenBurns.zoomin .background {
+    -webkit-transform: scale(1.08) rotate(-.02deg);
     transform: scale(1.08) rotate(-.02deg);
     opacity: .2;
     z-index: 1
@@ -4473,7 +4663,9 @@ p {
 .slides.animateOnEvent .kenBurns:not(.video) .background,
 .slides.animated .kenBurns.zoomin:not(.video) .background,
 .slides.animated .kenBurns:not(.video) .background {
-    transition: transform 5s cubic-bezier(.3, 0, .7, 1), opacity 1s ease
+    transition: opacity 1s ease, -webkit-transform 5s cubic-bezier(.3, 0, .7, 1);
+    transition: transform 5s cubic-bezier(.3, 0, .7, 1), opacity 1s ease;
+    transition: transform 5s cubic-bezier(.3, 0, .7, 1), opacity 1s ease, -webkit-transform 5s cubic-bezier(.3, 0, .7, 1)
 }
 
 .animateOnEvent .active .kenBurns.zoomin:not(.video) .background,
@@ -4483,11 +4675,13 @@ p {
 .animated .active.kenBurns.zoomin:not(.video) .background,
 .animated .active.kenBurns:not(.video) .background {
     opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
 
 .slides.animateOnEvent .kenBurns.zoomin:not(.video) .background,
 .slides.animated .kenBurns.zoomin:not(.video) .background {
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
 
@@ -4495,65 +4689,83 @@ p {
 .animated .active.kenBurns.zoomin:not(.video) .background,
 .windows .slides.animateOnEvent .active.kenBurns.zoomin:not(.video) .background,
 .windows .slides.animated .active.kenBurns.zoomin:not(.video) .background {
+    -webkit-transform: scale(1.08) rotate(-.02deg);
     transform: scale(1.08) rotate(-.02deg)
 }
 
 .mobile .kenBurns .background,
 .mobile .kenBurns.zoomin .background {
     transition: 0s;
+    -webkit-transform: none;
     transform: none
 }
 
 .slides.animateOnEvent .parallax:not(.video) .background,
 .slides.animated .parallax:not(.video) .background {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.25);
     transform: translate3d(0, 0, 0) scale(1.25);
-    transition: transform-origin 1s, transform 1s
+    transition: -webkit-transform-origin 1s, -webkit-transform 1s;
+    transition: transform-origin 1s, transform 1s;
+    transition: transform-origin 1s, transform 1s, -webkit-transform-origin 1s, -webkit-transform 1s
 }
 
 .slides.animateOnEvent.fast .parallax:not(.video) .background,
 .slides.animated.fast .parallax:not(.video) .background {
-    transition: transform-origin .6s, transform .6s
+    transition: -webkit-transform-origin .6s, -webkit-transform .6s;
+    transition: transform-origin .6s, transform .6s;
+    transition: transform-origin .6s, transform .6s, -webkit-transform-origin .6s, -webkit-transform .6s
 }
 
 .slides.animateOnEvent.slow .parallax:not(.video) .background,
 .slides.animated.slow .parallax:not(.video) .background {
-    transition: transform-origin 1.4s, transform 1.4s
+    transition: -webkit-transform-origin 1.4s, -webkit-transform 1.4s;
+    transition: transform-origin 1.4s, transform 1.4s;
+    transition: transform-origin 1.4s, transform 1.4s, -webkit-transform-origin 1.4s, -webkit-transform 1.4s
 }
 
 .slides.animateOnEvent .parallax.animate:not(.video) .background,
 .slides.animated .parallax.animate:not(.video) .background {
+    -webkit-transform-origin: center;
     transform-origin: center
 }
 
 .slides.animateOnEvent .slide.after.parallax:not(.video) .background,
 .slides.animated .slide.after.parallax:not(.video) .background {
+    -webkit-transform-origin: top center;
     transform-origin: top center
 }
 
 .slides.animateOnEvent .slide.before.parallax:not(.video) .background,
 .slides.animated .slide.before.parallax:not(.video) .background {
+    -webkit-transform-origin: bottom center;
     transform-origin: bottom center
 }
 
 .slides.animateOnEvent.horizontal .slide.after.parallax:not(.video) .background,
 .slides.animated.horizontal .slide.after.parallax:not(.video) .background {
+    -webkit-transform-origin: left center;
     transform-origin: left center
 }
 
 .slides.animateOnEvent.horizontal .slide.before.parallax:not(.video) .background,
 .slides.animated.horizontal .slide.before.parallax:not(.video) .background {
+    -webkit-transform-origin: right center;
     transform-origin: right center
 }
 
 .slides.animateOnEvent.zoom .slide.after.parallax:not(.video) .background,
 .slides.animated.zoom .slide.after.parallax:not(.video) .background {
+    -webkit-transform-origin: center;
     transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
     transform: translate3d(0, 0, 0) scale(1)
 }
 
 .slides.animateOnEvent.zoom .slide.animate.parallax:not(.video) .background,
 .slides.animated.zoom .slide.animate.parallax:not(.video) .background {
+    -webkit-transform-origin: center;
     transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0) scale(1.1);
     transform: translate3d(0, 0, 0) scale(1.1)
 }
 
@@ -4565,7 +4777,9 @@ p {
 .slides.animated.plain .slide.animate.parallax:not(.video) .background,
 .slides.animated.plain .slide.before.parallax:not(.video) .background,
 .slides.animated.zoom .slide.before.parallax:not(.video) .background {
+    -webkit-transform-origin: center;
     transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
     transform: translate3d(0, 0, 0) scale(1)
 }
 
@@ -4577,12 +4791,14 @@ p {
 
 @-webkit-keyframes scenic {
     50% {
+        -webkit-transform: scale(1.5) rotate(-.02deg);
         transform: scale(1.5) rotate(-.02deg)
     }
 }
 
 @keyframes scenic {
     50% {
+        -webkit-transform: scale(1.5) rotate(-.02deg);
         transform: scale(1.5) rotate(-.02deg)
     }
 }
@@ -4648,6 +4864,7 @@ p {
 .scroll .slide.after,
 .scroll .slide.before {
     visibility: visible;
+    -webkit-transform: none !important;
     transform: none !important
 }
 
@@ -4659,13 +4876,16 @@ p {
 
 .page-loaded.mobile.sidebarShown .simplifiedMobile .slide,
 .page-loaded.sidebarShown .scroll .slide {
+    -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
     pointer-events: none;
     opacity: .5 !important
 }
 
 .page-loaded .scroll .slide {
-    transition: transform .5s, opacity .5s !important
+    transition: opacity .5s, -webkit-transform .5s !important;
+    transition: transform .5s, opacity .5s !important;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s !important
 }
 
 .mobile .simplifiedMobile .navigation {
@@ -4675,10 +4895,12 @@ p {
 .mobile .simplifiedMobile [class*=ae-] {
     visibility: visible !important;
     opacity: 1 !important;
+    -webkit-transform: none !important;
     transform: none !important
 }
 
 .scroll .parallax:not(.video) .background {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.45);
     transform: translate3d(0, 0, 0) scale(1.45)
 }
 
@@ -4691,6 +4913,7 @@ p {
 @-webkit-keyframes zoomOut {
     from {
         opacity: 0;
+        -webkit-transform: scale(.86);
         transform: scale(.86)
     }
 }
@@ -4698,6 +4921,7 @@ p {
 @keyframes zoomOut {
     from {
         opacity: 0;
+        -webkit-transform: scale(.86);
         transform: scale(.86)
     }
 }
@@ -4705,6 +4929,7 @@ p {
 @-webkit-keyframes riseUp {
     from {
         opacity: 0;
+        -webkit-transform: scale(.86) translateY(50px);
         transform: scale(.86) translateY(50px)
     }
 }
@@ -4712,6 +4937,7 @@ p {
 @keyframes riseUp {
     from {
         opacity: 0;
+        -webkit-transform: scale(.86) translateY(50px);
         transform: scale(.86) translateY(50px)
     }
 }
@@ -6811,7 +7037,9 @@ article figcaption {
 }
 
 .flex {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: -2%;
     margin-right: -2%
@@ -6843,28 +7071,34 @@ article figcaption {
 }
 
 .flex.verticalCenter {
+    -webkit-align-items: center;
     align-items: center
 }
 
 .flex.verticalBottom {
+    -webkit-align-items: flex-end;
     align-items: flex-end
 }
 
 .flex.horizontalCenter {
+    -webkit-justify-content: center;
     justify-content: center
 }
 
 .flex.reverse {
+    -webkit-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse
 }
 
 .flex.bottom [class*=col-],
 .flex.reverse.top [class*=col-] {
+    -webkit-align-self: flex-end;
     align-self: flex-end
 }
 
 .flex.reverse.bottom [class*=col-],
 .flex.top [class*=col-] {
+    -webkit-align-self: flex-start;
     align-self: flex-start
 }
 
@@ -6960,6 +7194,7 @@ article figcaption {
 
     .parallaxMotion .parallaxElement:not(.responsive),
     .parallaxMotion:not(.responsive) .parallaxElement {
+        -webkit-transform: none !important;
         transform: none !important
     }
 
@@ -7085,6 +7320,7 @@ article figcaption {
     margin: 12px 20px;
     overflow: hidden;
     text-align: left;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition: all .75s, height 0s;
     transition-timing-function: cubic-bezier(.25, 1.37, .44, .93)
@@ -7123,9 +7359,12 @@ article figcaption {
 }
 
 .dialog.hide {
+    -webkit-transform: scale(.5);
     transform: scale(.5);
     opacity: 0 !important;
-    transition: height 0s, opacity .5s, transform .5s !important
+    transition: height 0s, opacity .5s, -webkit-transform .5s !important;
+    transition: height 0s, opacity .5s, transform .5s !important;
+    transition: height 0s, opacity .5s, transform .5s, -webkit-transform .5s !important
 }
 
 .dialog.reveal {
@@ -7151,12 +7390,14 @@ article figcaption {
     height: 2px;
     border-radius: 2px;
     background: #202020;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
     right: 6px
 }
 
 .dialog .close:before {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg)
 }
 
@@ -7221,6 +7462,7 @@ article figcaption {
 }
 
 html:not(.page-loaded) .dialog {
+    -webkit-transform: scale(.5) translateY(100%);
     transform: scale(.5) translateY(100%);
     opacity: 0
 }
@@ -7676,6 +7918,7 @@ p.remind-43 {
 }
 
 .box-67:hover .thumbnail-67 img {
+    -webkit-transform: scale(1.0225);
     transform: scale(1.0225)
 }
 
@@ -7689,11 +7932,14 @@ p.remind-43 {
     margin-top: 14px;
     margin-bottom: 14px;
     opacity: .9;
-    transition: opacity .1s ease-in, transform .15s cubic-bezier(.5, 0, .25, 2.5)
+    transition: opacity .1s ease-in, -webkit-transform .15s cubic-bezier(.5, 0, .25, 2.5);
+    transition: opacity .1s ease-in, transform .15s cubic-bezier(.5, 0, .25, 2.5);
+    transition: opacity .1s ease-in, transform .15s cubic-bezier(.5, 0, .25, 2.5), -webkit-transform .15s cubic-bezier(.5, 0, .25, 2.5)
 }
 
 .flex-68 a:hover {
     opacity: 1;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05)
 }
 
@@ -7747,6 +7993,7 @@ p.remind-43 {
     padding: 20px;
     z-index: 10;
     color: #fff;
+    -webkit-transform: translateY(10px);
     transform: translateY(10px)
 }
 
@@ -7763,6 +8010,7 @@ p.remind-43 {
 
 .flex-69 .box-69:hover .cell-69 {
     opacity: 1;
+    -webkit-transform: translateY(0);
     transform: translateY(0)
 }
 
@@ -7871,6 +8119,7 @@ p.remind-43 {
 }
 
 .slider[data-slider-id="75-0"].animated.fromAbove [class*=ae-]:not(.done) {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
     transform: scale(1) translate3d(0, 0, 0)
 }
 
@@ -7951,6 +8200,7 @@ p.remind-43 {
 
 .box-77:hover .thumbnail-77.video:after {
     background-color: rgba(0, 0, 0, .1);
+    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 
@@ -8396,6 +8646,7 @@ p.remind-43 {
 }
 
 .calendar-97:hover {
+    -webkit-transform: translateY(0) !important;
     transform: translateY(0) !important
 }
 
@@ -8428,14 +8679,18 @@ a.box-99:hover {
 .title-slide-98 {
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 15
 }
 
 @media (min-width:768px) {
     .frame-97 {
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
+        -webkit-justify-content: center;
         justify-content: center
     }
 }
@@ -8543,6 +8798,7 @@ a.box-99:focus {
     text-align: left;
     width: 80%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
 }
 
@@ -8566,6 +8822,7 @@ a.box-99:focus {
 }
 
 .item-100:hover {
+    -webkit-transform: translateY(-2px);
     transform: translateY(-2px)
 }
 
@@ -8713,8 +8970,11 @@ a.box-99:focus {
 }
 
 .social-circles li a {
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
     width: 30px;
     height: 30px;
@@ -8729,6 +8989,7 @@ a.box-99:focus {
 
 .social-circles li a:hover {
     opacity: 1;
+    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 

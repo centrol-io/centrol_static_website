@@ -317,6 +317,22 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/public\/footer.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/footer.html",
+      "oF" : 0
+    },
+    "\/public\/header.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/header.html",
+      "oF" : 0
+    },
     "\/public\/index.html" : {
       "cB" : 0,
       "ft" : 8192,

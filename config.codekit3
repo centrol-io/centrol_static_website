@@ -56,11 +56,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/assets\/img\/background\/Centrol - Signals Graphic.png" : {
+    "\/public\/assets\/img\/background\/Centrol-SignalsGraphic.png" : {
       "ft" : 32768,
       "iS" : 428613,
       "oA" : 0,
-      "oAP" : "\/public\/assets\/img\/background\/Centrol - Signals Graphic.png",
+      "oAP" : "\/public\/assets\/img\/background\/Centrol-SignalsGraphic.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -113,6 +113,32 @@
       "iS" : 83418,
       "oA" : 0,
       "oAP" : "\/public\/assets\/img\/background\/outer-ring.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/assets\/img\/background\/Shortcut Icon.png" : {
+      "ft" : 32768,
+      "iS" : 2236920,
+      "oA" : 0,
+      "oAP" : "\/public\/assets\/img\/background\/Shortcut Icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/assets\/img\/background\/webpreviewimage.png" : {
+      "ft" : 32768,
+      "iS" : 56720,
+      "oA" : 0,
+      "oAP" : "\/public\/assets\/img\/background\/webpreviewimage.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

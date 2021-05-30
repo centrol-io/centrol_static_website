@@ -1,9 +1,11 @@
-image: alpine:latest
+image: node:lts-buster
 
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - npm install
+  - npm run build
+  - cp -r dist public
   tags:
     - build
   artifacts:

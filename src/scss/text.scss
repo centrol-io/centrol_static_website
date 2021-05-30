@@ -1,6 +1,8 @@
 // MIXINS
 // use for light text on dark backgrounds
 // crop top space on text elements - caused by line height
+@import "variables";
+@import "mixins";
 
 @mixin lhCrop($line-height, $capital-letter: 1) {
   &::before {

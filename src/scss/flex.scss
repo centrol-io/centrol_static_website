@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .flex {
   display:flex;
   flex-wrap:wrap;

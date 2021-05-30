@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+
 /* Colors */
 @include generateColors("white", $default-white-color, $default-button-color);
 @include generateColors("black", $default-button-color);

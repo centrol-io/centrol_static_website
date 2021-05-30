@@ -3,13 +3,15 @@ image: node:lts-buster
 pages:
   stage: deploy
   script:
-  - npm install
-  - npm run build
-  - cp -r dist public
+    - npm install
+    - npm run build
+    - cp -r dist public
   tags:
     - build
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
+  changes:
+    - src/**/*

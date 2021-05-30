@@ -12,6 +12,7 @@ pages:
     paths:
       - public
   only:
-    - master
-  changes:
-    - src/**/*
+    refs:
+      - master
+    changes:
+      - src/**/*

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "del": "rimraf dist/*",
-    "make": "mkdir dist",
+    "make": "mkdir -p dist",
     "clean": "run-s del make",
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
     "css:scss": "node-sass --output-style compressed -o dist src/scss",
@@ -31,7 +31,8 @@
     "watch:js": "onchange \"src/js\" -- npm run build:js",
     "watch:assets": "onchange \"src/assets\" -- npm run build:images",
     "watch:library": "onchange \"src/library\" -- npm run build:library",
-    "watch": "run-p serve watch:*"
+    "watch": "run-p serve watch:*",
+    "run-dev": "run-s build watch"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.8.4",

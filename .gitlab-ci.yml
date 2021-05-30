@@ -12,3 +12,5 @@ pages:
   only:
     refs:
       - master
+    changes:
+      - src/**/*

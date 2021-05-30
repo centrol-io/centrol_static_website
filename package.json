@@ -9,7 +9,9 @@
     "url": "https://github.com/Vincenius/static-website-template"
   },
   "scripts": {
-    "clean": "rimraf dist/*",
+    "del": "rimraf dist/*",
+    "make": "mkdir dist",
+    "clean": "run-s del make",
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
     "css:scss": "node-sass --output-style compressed -o dist src/scss",
     "css:lint": "stylelint src/scss/*.scss --syntax scss",

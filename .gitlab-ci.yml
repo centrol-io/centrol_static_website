@@ -6,8 +6,6 @@ pages:
     - npm install
     - npm run build
     - cp -r dist public
-  tags:
-    - build
   artifacts:
     paths:
       - public

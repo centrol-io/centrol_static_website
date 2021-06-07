@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "centrol-fire"
+  },
+  "targets": {
+    "centrol-fire": {
+      "hosting": {
+        "website": [
+          "centrol-website"
+        ],
+        "dev-website": [
+          "centrol-website-dev"
+        ]
+      }
+    }
+  }
+}

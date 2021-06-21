@@ -85,6 +85,10 @@
       })(window, document, "script", "dataLayer", "GTM-TLBWCW5");
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- jQuery 3.5.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="js/centrol.js"></script>
 
     <!-- Telegram Bot -->
@@ -323,7 +327,7 @@
                 data, social feeds, and more
               </p>
               <div class="margin-top-3">
-                <form class="early-access-sign-up-form" action="#">
+                <form class="early-access-sign-up-form">
                   <input
                     id="user-email"
                     type="email"
@@ -332,11 +336,11 @@
                     placeholder="Email"
                   />
                   <button
-                    type="submit"
+                    id="submit-button"
+                    type="button"
                     class="button blue rounded ae-7 fromCenter"
                     name="button"
-                    onclick="onSignUp()"
-                  >
+                    >
                     Sign Up
                   </button>
                 </form>
@@ -452,9 +456,6 @@
         </li>
       </ul>
     </div>
-
-    <!-- jQuery 3.5.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Compressed Scripts -->
     <script src="js/slides.min.js?521351" type="text/javascript"></script>

@@ -18,6 +18,11 @@ var HttpClient = function () {
 };
 
 function onSignUp() {
+
+}
+
+$(document).ready(function () {
+  document.getElementById("submit-button").addEventListener("click", function() {
   var client = new HttpClient();
   var url =
     "https://us-central1-neat-throne-258104.cloudfunctions.net/signup_email?t=d-d4a896f1b17a4bcb8ecb832f5d751730&u=";
@@ -25,8 +30,10 @@ function onSignUp() {
   const email = $("#user-email").val();
   if (validateEmail(email)) {
     client.get(url + email, function (response) {
+      alert("Thanks!");
       // do something with response
     });
     console.info("Thanks!");
   }
-}
+  });
+});
